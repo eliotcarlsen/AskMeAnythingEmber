@@ -10,5 +10,12 @@
     "author": "Violet Beauregarde",
     "content": "How are you?",
     "notes": "what?"
+  }],
+  "answers": [{
+    "response": "I don't know.",
+    "responder": "God."
+    }, {
+    "response": "Not much.",
+    "responder": "whatever."
   }]
 }
