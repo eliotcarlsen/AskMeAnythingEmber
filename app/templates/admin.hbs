@@ -1,7 +1,15 @@
+<h2>User Questions:</h2>
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{allquestion-tile question=question}}
     {{admin-delete question=question delete="delete"}}
     {{admin-edit question=question edit="edit"}}
+  {{/each}}
+</ul>
+<h2>User Comments:</h2>
+<ul>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+    {{admin-delete-answer answer=answer deleteAnswer="deleteAnswer"}}
   {{/each}}
 </ul>
