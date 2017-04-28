@@ -1,21 +1,23 @@
 {{#if editQuestionShow}}
-<div>
-  <form>
-    <div class="form-group">
-      <label for="author">Your Name</label>
-      {{input value=author id="author" placeholder=question.author required=true}}
-    </div>
-    <div class="form-group">
-      <label for="content">What's your question?</label>
-      {{input value=content id="content" placeholder=question.content required=true}}
-    </div>
-    <div class="form-group">
-      <label for="notes">Anything else?</label>
-      {{input value=notes id="notes" placeholder=question.notes required=true}}
-    </div>
-    <button {{action 'editQuestion' question}}>Save Changes</button>
-  </form>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <form>
+      <div class="form-group">
+        <label for="author">Your Name</label>
+        {{input value=author id="author" placeholder=question.author required=true}}
+      </div>
+      <div class="form-group">
+        <label for="content">What's your question?</label>
+        {{input value=content id="content" placeholder=question.content required=true}}
+      </div>
+      <div class="form-group">
+        <label for="notes">Anything else?</label>
+        {{input value=notes id="notes" placeholder=question.notes required=true}}
+      </div>
+      <button class="btn btn-info"{{action 'editQuestion' question}}>Save Changes</button>
+    </form>
+  </div>
 </div>
 {{else}}
-<button {{action 'edit' question}}>Edit</button>
+<button class="btn btn-info"{{action 'edit' question}}>Edit</button>
 {{/if}}

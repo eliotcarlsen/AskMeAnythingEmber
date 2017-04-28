@@ -1,15 +1,23 @@
 <h2>User Questions:</h2>
-<ul>
-  {{#each model.questions as |question|}}
+
+{{#each model.questions as |question|}}
+<div class="panel panel-info">
+  <div class="panel-heading">
     {{allquestion-tile question=question}}
-    {{admin-delete question=question delete="delete"}}
-    {{admin-edit question=question edit="edit"}}
-  {{/each}}
-</ul>
+    <p>{{admin-delete question=question delete="delete"}}{{admin-edit question=question edit="edit"}}</p>
+    <br>
+  </div>
+</div>
+{{/each}}
+
 <h2>User Comments:</h2>
-<ul>
-  {{#each model.answers as |answer|}}
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    {{#each model.answers as |answer|}}
     {{answer-tile answer=answer}}
-    {{admin-delete-answer answer=answer deleteAnswer="deleteAnswer"}}
-  {{/each}}
-</ul>
+    <p>{{admin-delete-answer answer=answer deleteAnswer="deleteAnswer"}}</p>
+    <br>
+    {{/each}}
+  </div>
+</div>

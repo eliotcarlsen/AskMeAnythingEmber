@@ -1,7 +1,17 @@
-{{question.content}} by: {{question.author}}
-<h3>Answers...</h3>
-<ul>
-  {{#each question.answers as |answer|}}
-    {{answer-tile answer=answer}}
-  {{/each}}
-</ul>
+<div class="panel panel-info">
+  <div class="panel-heading" id="question_page">
+    {{question.content}}
+    <br>
+    {{question.notes}}
+    <br>
+    by: {{question.author}}
+  </div>
+</div>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2>Answers...</h2>
+  </div>
+</div>
+{{#each question.answers as |answer|}}
+  {{answer-tile answer=answer}}
+{{/each}}

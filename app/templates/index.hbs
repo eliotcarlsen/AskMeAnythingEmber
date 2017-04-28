@@ -1,7 +1,16 @@
-<ul>
-  {{#each model.questions as |question|}}
-    {{allquestion-tile question=question}}
-  {{/each}}
-</ul>
-<h2>Want to ask a question?</h2>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2>Want to ask a question?</h2>
+  </div>
+</div>
 {{new-question question=question saveQuestion="saveQuestion"}}
+<br>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2>See what other people are asking!</h2>
+  </div>
+</div>
+{{#each model.questions as |question|}}
+  {{allquestion-tile question=question}}
+  <br>
+{{/each}}

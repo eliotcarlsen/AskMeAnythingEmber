@@ -1,0 +1,19 @@
+h2{
+  color: black;
+  text-align: center;
+}
+div.panel-body{
+  text-align: center;
+}
+.jumbotron{
+  text-align: center;
+}
+div.panel-heading#question_page{
+  font-weight: bold;
+  font-size: 30px;
+  color: orange;
+  text-align: center;
+}
+p{
+  text-align: center;
+}

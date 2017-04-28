@@ -1,2 +1,6 @@
-<li>{{#link-to 'onequestion' question.id}}{{question.content}}{{/link-to}}</li>
-<p>{{question.author}}</p>
+<div class="panel panel-default">
+  <div class="panel-body">
+    {{#link-to 'onequestion' question.id}}{{question.content}}{{/link-to}}
+    submitted by: {{question.author}}
+  </div>
+</div>
