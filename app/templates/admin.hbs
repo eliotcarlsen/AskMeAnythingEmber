@@ -1,0 +1,7 @@
+<ul>
+  {{#each model as |question|}}
+    {{allquestion-tile question=question}}
+    {{admin-delete question=question delete="delete"}}
+    {{admin-edit question=question edit="edit"}}
+  {{/each}}
+</ul>
