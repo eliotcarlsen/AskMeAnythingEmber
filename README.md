@@ -1,7 +1,16 @@
 # project
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project creates a question and answer message board, similar to Reddit, Quora, StackOverflow or other such sites. Users will be able to submit a question, then other users can respond with answers.
+
+The message board will allow junior developers and newbies learning to code to ask questions that senior developers, product owners, senior designers, recruiters, and other tech professionals can answer.
+
+Questions will include the content of the question itself, an author, and additional notes.
+Answers will include the content of the answer and the author.
+Project includes a header and/or navbar that appears on all pages. It will contain the name of the site and a link to the home page, and other content such as social media, LinkedIn, etc.
+Project lists all questions on the homepage, displaying only the question and the name of the author.
+Users can click a question, to be routed to another page containing additional information and question details.
+Users can add and edit questions.
+Users can add answers to a question. Answers will be added and viewed on the same page as the question they respond to.
 
 ## Prerequisites
 
@@ -15,7 +24,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/eliotcarlsen/AskMeAnythingEmber` this repository
 * `cd project`
 * `npm install`
 * `bower install`
